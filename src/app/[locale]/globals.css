@@ -2,5 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.ct-container {
+		@apply xl:max-w-[1114px] lg:max-w-[1000px] md:max-w-[768px] sm:max-w-[425px] xs:max-w-[360px] mx-auto px-1 md:px-4;
+	}
+}
+
 @layer utilities {
 }

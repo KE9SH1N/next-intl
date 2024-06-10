@@ -37,24 +37,7 @@ export const blog_data = [
 		blog_des: "Learn the basics of React and how to get started.",
 		blog_image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
 	},
-	{
-		id: 7,
-		blog_title: "Node.js for Beginners",
-		blog_des: "A beginner's guide to backend development with Node.js.",
-		blog_image: "https://images.unsplash.com/photo-1522656767803-3e259ae09b80",
-	},
-	{
-		id: 8,
-		blog_title: "APIs: The Backbone of the Web",
-		blog_des: "Understanding APIs and how they power modern web applications.",
-		blog_image: "https://images.unsplash.com/photo-1503437313881-503a91226424",
-	},
-	{
-		id: 9,
-		blog_title: "Version Control with Git",
-		blog_des: "An introduction to Git and how to manage your code effectively.",
-		blog_image: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d",
-	},
+
 	{
 		id: 10,
 		blog_title: "Web Security Basics",

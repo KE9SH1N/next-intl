@@ -11,7 +11,7 @@ const Language = () => {
 
 	const handleLanguageChange = (language: string) => {
 		setLanguage(language);
-		setIsDropDown(true);
+		setIsDropDown(false);
 	};
 	return (
 		<div className="w-[10%] relative">
@@ -31,7 +31,7 @@ const Language = () => {
 				</div>
 				<ul
 					className={`capitalize absolute mt-1 rounded w-full bg-white border border-black cursor-pointer ${
-						isDropDwon ? "hidden" : ""
+						isDropDwon ? "" : "hidden"
 					} `}
 				>
 					<li

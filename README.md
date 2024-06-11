@@ -1,3 +1,24 @@
+## Getting Started
+
+First, Clone my git repo
+
+## Install Dependencies
+
+````bash
+npm run i
+
+Second, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+````
+
 # Dynamic Routing Internationalization with Next.js
 
 ## Overview:
@@ -19,4 +40,3 @@ This repository showcases an implementation of dynamic routing internationalizat
 - **Route Parameters**: Integrates language selection into the routing mechanism, ensuring the selected language is reflected in the URL parameters.
 
 Explore the code and see how these modern technologies come together to create a robust and dynamic internationalized application.
-

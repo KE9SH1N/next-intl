@@ -4,8 +4,9 @@ First, Clone my git repo
 
 ## Install Dependencies
 
-````bash
+```bash
 npm run i
+```
 
 Second, run the development server:
 
@@ -17,7 +18,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
-````
+```
 
 # Dynamic Routing Internationalization with Next.js
 

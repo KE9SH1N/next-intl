@@ -1,7 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
+import { useDispatch } from "react-redux";
+import { setMultiLanguage } from "../../rtk/feature/languageSlice";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 const Language = () => {
+	const dispatch = useDispatch();
+	const pathname = usePathname();
+	const router = useRouter();
+
 	const [isDropDwon, setIsDropDown] = useState(false);
 	const [Language, setLanguage] = useState("Bn");
 
@@ -10,8 +18,16 @@ const Language = () => {
 	};
 
 	const handleLanguageChange = (language: string) => {
+		dispatch(setMultiLanguage(language));
 		setLanguage(language);
 		setIsDropDown(false);
+
+		if (pathname === `/bn` || pathname === `/en` || pathname === `/`) {
+			router.push(language);
+		} else {
+			const newPathname = pathname.replace(/^\/[a-z]{2}\//, `/${language}/`);
+			router.push(newPathname);
+		}
 	};
 	return (
 		<div className="w-[10%] relative">

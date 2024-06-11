@@ -1,5 +1,5 @@
 import React from "react";
-import AllBlogs from "../components/home/Allblogs";
+import AllBlogs from "../components/home/AllBlogs";
 
 const page = () => {
 	return (

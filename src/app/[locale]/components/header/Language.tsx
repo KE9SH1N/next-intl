@@ -1,8 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
-import { useDispatch } from "react-redux";
-import { setMultiLanguage } from "../../rtk/feature/languageSlice";
+import { useDispatch, useSelector } from "react-redux";
+import {
+	selectLanguage,
+	setMultiLanguage,
+} from "../../rtk/feature/languageSlice";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 const Language = () => {
@@ -29,6 +32,8 @@ const Language = () => {
 			router.push(newPathname);
 		}
 	};
+
+	const selectMultiLanguage = useSelector(selectLanguage);
 	return (
 		<div className="w-[10%] relative">
 			<div className="w-full">
@@ -36,7 +41,7 @@ const Language = () => {
 					className="w-full py-1 px-2 rounded flex items-end justify-between border border-white cursor-pointer text-white"
 					onClick={handleDropDown}
 				>
-					<span className=" capitalize">{Language}</span>
+					<span className=" capitalize">{selectMultiLanguage}</span>
 					<div>
 						{isDropDwon ? (
 							<RiArrowDropDownLine className="text-2xl" />

@@ -17,7 +17,7 @@ const Blogs: React.FC<BlogProps> = ({ blog }: any) => {
 				<h2>
 					{selectMultiLanguage === "bn" ? blog.blog_title_bn : blog.blog_title}
 				</h2>
-				{/* <Image src={blog.blog_image} alt="" width={500} height={500} /> */}
+				<Image src={blog.blog_image} alt="" width={500} height={500} />
 				<p>{selectMultiLanguage === "bn" ? blog.blog_des_bn : blog.blog_des}</p>
 			</div>
 			<Link

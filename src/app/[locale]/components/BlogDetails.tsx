@@ -33,7 +33,7 @@ const BlogDetails = () => {
 					? productDetails?.blog_title_bn
 					: productDetails?.blog_title}
 			</h1>
-			<Image src={productDetails?.blog_image} alt="" width={400} height={800} />
+			{/* <Image src={productDetails?.blog_image} alt="" width={400} height={800} /> */}
 			<p>
 				{selectMultiLanguage === "bn"
 					? productDetails?.blog_des_bn
